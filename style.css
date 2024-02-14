@@ -5,9 +5,13 @@ body {
     background-size: cover;
 }
 
+.input-area {
+    display: flex;
+}
 .container {
     background-color: white;
     min-height: 100vh;
+    opacity: 0.8;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -28,7 +32,7 @@ body {
     height: 4px;
     background-color: pink;
     position: absolute;
-    width: 70px;
+    width: 50px;
     left: 0px;
     top: 52px;
     padding: 0px;
@@ -40,4 +44,32 @@ body {
     /* 사이에 간격 멀리 띄워주는 코드 */
     justify-content: space-between;
     padding: 1.2em;
+}
+
+.task-done {
+    text-decoration: line-through; /* 텍스트 밑줄 */
+    /* background-size: 300px 100px; */
+    background-color: lightgray;
+}
+
+
+
+/* 나만의 css 조정 */
+#task-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+#add-button {
+    margin-left: 3px;
+    width: 35px;
+    height: 38px;
+}
+.imgSize {
+    width: 25px;
+    height: 25px;
+}
+.noLine {
+    background-color: white;
+	border: none;
 }
