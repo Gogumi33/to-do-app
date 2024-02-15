@@ -4,15 +4,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1 {
+    width: 80%;
+}
 
 .input-area {
     display: flex;
 }
 .container {
     background-color: white;
-    min-height: 100vh;
-    opacity: 0.8;
+    min-height: 95vh;
+    opacity: 0.83;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .task-area {
@@ -23,19 +31,24 @@ body {
     border-bottom:1px solid lightgrey;
     /* 아래에만 긋는 이유 - 아래 task와만 구분짓고 싶어서. */
     position: relative;
+    font-size: 17px;
+    font-weight: bold;
 }
 .task-tabs div {
     padding: 1em;
+    cursor: pointer;
 }
 
-#under-line {
-    height: 4px;
-    background-color: pink;
+#under-line { /* 밑줄과제까지 */
     position: absolute;
-    width: 50px;
+    background-color: rgb(95, 167, 239);
+    width: 0px;
+    top: 0px;
     left: 0px;
-    top: 52px;
+    height: 4px;
+
     padding: 0px;
+    transition: 0.3s;
 }
 
 
@@ -44,19 +57,23 @@ body {
     /* 사이에 간격 멀리 띄워주는 코드 */
     justify-content: space-between;
     padding: 1.2em;
-}
+}    
 
 .task-done {
     text-decoration: line-through; /* 텍스트 밑줄 */
     /* background-size: 300px 100px; */
-    background-color: lightgray;
+    color: lightgray;
+    max-width: 83%;
+}
+.task-ongoing {
+    max-width: 83%;
 }
 
 
 
 /* 나만의 css 조정 */
 #task-input {
-    width: 300px;
+    width: 95%;
     height: 40px;
     border-radius: 5px;
 }
@@ -64,12 +81,30 @@ body {
     margin-left: 3px;
     width: 35px;
     height: 38px;
+    font-size: 18px;
 }
 .imgSize {
     width: 25px;
     height: 25px;
+    margin-left: 10px;
 }
 .noLine {
     background-color: white;
 	border: none;
+}
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+
+
+
+#skin1, #skin2, #skin3 {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 20px;
 }

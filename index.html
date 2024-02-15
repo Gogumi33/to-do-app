@@ -9,7 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>✎ Todo List</h1>
+        <div class="top">
+            <h1>✎ Todo List</h1>
+            <button class="noLine"><img src="images/gradation.jpeg" id="skin1"></button>
+            <button class="noLine"><img src="images/white.jpeg" id="skin2"></button>
+            <button class="noLine"><img src="images/third.jpeg" id="skin3"></button>
+        </div>
         <section class="input-area">
             <input type="text" id="task-input"/>
             <button id="add-button">+</button>
@@ -19,13 +24,13 @@
             <!--위 탭3개 부분-->
             <div class="task-tabs">
                 <div id="under-line"></div>
-                <div>
+                <div id="all">
                     All
                 </div>
-                <div>
+                <div id="ongoing">
                     Not Done
                 </div>
-                <div>
+                <div id="done">
                     Done
                 </div>
             </div>
@@ -40,3 +45,4 @@
     <script src="main.js"></script>
 </body>
 </html>
+
