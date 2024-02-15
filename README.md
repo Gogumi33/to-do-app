@@ -1,4 +1,4 @@
-<img width="960" alt="Todo List" src="https://github.com/Gogumi33/to-do-app/assets/135415213/810fd945-91ea-4b28-90d5-0b105bece2af">
+<img width="960" alt="TodoList" src="https://github.com/Gogumi33/to-do-app/assets/135415213/b3378692-96f9-400b-b17a-dc6739ed81fa">
 
 # Todo List
 
