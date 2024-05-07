@@ -158,3 +158,5 @@ function changeSkin2() {
 function changeSkin3() {
     document.body.style.backgroundImage = "url(images/third.jpeg)"; // 물결
 }
+
+// git clone and commit test
